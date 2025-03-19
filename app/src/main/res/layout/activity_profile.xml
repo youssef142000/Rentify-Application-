@@ -1,0 +1,129 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background"
+    android:padding="16dp"
+    tools:context=".Profile">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/buttonBackToWelcomPage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_back_arrow"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="Back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Full Name -->
+    <TextView
+        android:id="@+id/textViewFullName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/dark_primary"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonBackToWelcomPage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- User Type -->
+    <TextView
+        android:id="@+id/textViewUserType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="User Type"
+        android:textSize="18sp"
+        android:textColor="@color/primary_text"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewFullName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Buttons Section -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewUserType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Add Category Button -->
+            <Button
+                android:id="@+id/buttonToAddCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Add Category"
+                android:textStyle="bold"
+                android:backgroundTint="@color/button_background"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <!-- Show List of Users Button -->
+
+            <Button
+                android:id="@+id/buttonShowListofUsers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Show List of Users"
+                android:textStyle="bold"
+                android:backgroundTint="@color/button_background"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <!-- Add Item Button -->
+            <Button
+                android:id="@+id/buttonToAddItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Add Items"
+                android:textStyle="bold"
+                android:backgroundTint="@color/button_background"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <!-- Rent Item Button -->
+            <Button
+                android:id="@+id/buttonToRentItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Rent Items"
+                android:textStyle="bold"
+                android:backgroundTint="@color/button_background"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+            <!-- Show List of Rent Requests -->
+            <Button
+                android:id="@+id/buttonToCheckRequests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Check Requests"
+                android:textStyle="bold"
+                android:backgroundTint="@color/button_background"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

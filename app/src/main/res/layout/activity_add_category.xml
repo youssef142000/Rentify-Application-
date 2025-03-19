@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background"
+    tools:context=".AddCategory">
+
+    <!-- Title for the page -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_primary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/buttonBackToProfile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_back_arrow"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="Back"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true" />
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="8dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Form to add categories -->
+            <LinearLayout
+                android:id="@+id/addCategoryForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/category_form_background"
+                android:padding="16dp"
+                android:elevation="4dp">
+
+
+                <EditText
+                    android:id="@+id/editTextCategoryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Category Name"
+                    android:inputType="text"
+                    android:background="@drawable/edittext_background"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:layout_marginBottom="8dp" />
+
+
+
+                <EditText
+                    android:id="@+id/editTextCategoryDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Category Description"
+                    android:inputType="text"
+                    android:background="@drawable/edittext_background"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/buttonAddCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Category"
+                    android:backgroundTint="@color/button_background"
+                    android:textColor="@color/white"
+                    android:padding="12dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- RecyclerView for Categories -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/recycler_view_background"
+                android:padding="8dp"
+                android:clipToPadding="false"
+                android:elevation="4dp"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

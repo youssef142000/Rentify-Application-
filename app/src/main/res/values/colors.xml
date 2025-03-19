@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_background">#F5F5F5</color>
+    <color name="dark_primary">#3F51B5</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="button_background">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="primary_border">#FF4081</color>
+    <color name="error_background">#F44336</color>
+    <color name="hint_color">#B0BEC5</color>
+    <color name="border_color">#CFD8DC</color>
+    <color name="button_update">#4CAF50</color>
+    <color name="button_delete">#F44336</color><!-- Red for Delete -->
+
+
+</resources>

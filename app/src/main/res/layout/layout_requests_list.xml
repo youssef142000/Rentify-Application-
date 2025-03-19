@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Item Name -->
+        <TextView
+            android:id="@+id/textViewItemReqName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Category Type -->
+        <TextView
+            android:id="@+id/textViewCategoryTypeReq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Category Type"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+
+        <!-- Item Description -->
+        <TextView
+            android:id="@+id/textViewItemDescriptionReq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Item Description"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+
+        <!-- Item Price -->
+        <TextView
+            android:id="@+id/textViewItemPriceReq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Price: $0.00"
+            android:textColor="@color/primary_text"
+            android:textSize="14sp" />
+
+        <!-- Time Period -->
+        <TextView
+            android:id="@+id/textViewItemTimePeriodReq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Available for: 0 days"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+
+        <!-- Request to Rent Button -->
+        <TextView
+            android:id="@+id/textViewItemStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Item Status"
+            android:textColor="@color/dark_primary"
+            android:textSize="14sp" />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/acceptRequest"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="12dp"-->
+        <!--            android:backgroundTint="@color/dark_primary"-->
+        <!--            android:padding="8dp"-->
+        <!--            android:text="Accept"-->
+        <!--            android:textColor="@android:color/white"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--        <Button-->
+        <!--            android:id="@+id/rejectRequest"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="12dp"-->
+        <!--            android:backgroundTint="@color/dark_primary"-->
+        <!--            android:padding="8dp"-->
+        <!--            android:text="Reject"-->
+        <!--            android:textColor="@android:color/white"-->
+        <!--            android:textStyle="bold" />-->
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

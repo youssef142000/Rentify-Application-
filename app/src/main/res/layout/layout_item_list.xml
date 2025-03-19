@@ -1,0 +1,80 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Item Name -->
+        <TextView
+            android:id="@+id/textViewItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text" />
+
+        <!-- Category Type -->
+        <TextView
+            android:id="@+id/textViewCategoryType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category Type"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/secondary_text" />
+
+        <!-- Item Description -->
+        <TextView
+            android:id="@+id/textViewItemDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Description"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/secondary_text" />
+
+        <!-- Item Price -->
+        <TextView
+            android:id="@+id/textViewItemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: $0.00"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/primary_text" />
+
+        <!-- Time Period -->
+        <TextView
+            android:id="@+id/textViewItemTimePeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available for: 0 days"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/secondary_text" />
+
+        <!-- Request to Rent Button -->
+        <Button
+            android:id="@+id/buttonRequestToRent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Request to Rent"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/dark_primary"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

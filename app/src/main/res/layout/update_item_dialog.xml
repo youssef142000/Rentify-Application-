@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/light_background">
+
+    <!-- Item Name -->
+    <EditText
+        android:id="@+id/editTextitemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter item name"
+        android:padding="12dp"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/hint_color"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Item Description -->
+    <EditText
+        android:id="@+id/editTextitemDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter description"
+        android:padding="12dp"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/hint_color"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Item Price -->
+
+    <EditText
+        android:id="@+id/editTextitemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter price"
+        android:padding="12dp"
+        android:inputType="numberDecimal"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/hint_color"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Item Time Period -->
+    <EditText
+        android:id="@+id/editTextItemTimePeriod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter time period"
+        android:padding="12dp"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/hint_color"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/buttonUpdateItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/button_background"
+            android:textColor="@color/white"
+            android:text="Update"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/buttonDeleteItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/button_delete"
+            android:textColor="@color/white"
+            android:text="Delete"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+</LinearLayout>
